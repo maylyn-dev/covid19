@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::redirect('/', '/cases/overall');
+
+Route::get('/cases/overall', function () {
+    return view('covid-cases.overall');
+});
+
+Route::get('/cases/countries', function () {
+    return view('covid-cases.countries');
 });
