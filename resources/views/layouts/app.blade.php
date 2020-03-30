@@ -20,14 +20,15 @@
                 margin: 0;
             }
 
-            .full-height {
-                height: 100vh;
+            .half-height {
+                height: 50vh;
             }
 
             .flex-center {
                 align-items: center;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
             }
 
             .position-ref {
@@ -46,12 +47,13 @@
 
             .title {
                 font-size: 84px;
+                color: #ffffff;
             }
 
             .links > a {
-                color: #636b6f;
+                color: #ffffff;
                 padding: 0 25px;
-                font-size: 13px;
+                font-size: 15px;
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
@@ -61,10 +63,17 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .header {
+                background-image: url({{url('images/coronavirus-4914026.jpg')}});
+                background-size: cover;
+                padding: 50px;
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
-        <div class="text-center">
+        <div class="text-center header half-height flex-center">
             <div class="title">
                 COVID-19
             </div>
@@ -76,7 +85,7 @@
             </div>
         </div>
 
-        <div class="container-fluid">
+        <div class="container-fluid full-height">
             @yield('content')
         </div>
     </body>

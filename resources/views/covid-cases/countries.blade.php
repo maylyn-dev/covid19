@@ -8,8 +8,8 @@
         </div>
     </div>
 
-    <div class="row mb-3">
-        <div class="col-md-10"><small>Last Updated: {{ $overall['updated'] }}</small></div>
+    <div class="text-center mb-3">
+        <small>Last Updated: {{ $overall['updated'] }}</small>
     </div>
 
     <div class="row mb-3">
