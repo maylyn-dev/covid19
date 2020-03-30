@@ -65,10 +65,19 @@
             }
 
             .header {
-                background-image: url({{url('images/coronavirus-4914026.jpg')}});
+                background-image: url("{{url('images/coronavirus-4914026.jpg')}}");
                 background-size: cover;
                 padding: 50px;
                 font-weight: bold;
+            }
+
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: #EEEEEE;
+                text-align: center;
             }
         </style>
     </head>
@@ -88,5 +97,10 @@
         <div class="container-fluid full-height">
             @yield('content')
         </div>
+
+        <div class="footer p-2">
+            <small>Designed and Developed by: Maylyn Talampas | <a href="mailto:maylyntalampas21@gmail.com">
+            maylyntalampas21@gmail.com</a>.
+        </div> 
     </body>
 </html>
