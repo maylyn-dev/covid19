@@ -94,7 +94,7 @@
             </div>
         </div>
 
-        <div class="container-fluid full-height">
+        <div class="container-fluid full-height mb-5">
             @yield('content')
         </div>
 

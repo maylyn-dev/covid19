@@ -23,7 +23,7 @@ class OverallCaseComposer
 
     public function compose(View $view)
     {
-        $epoch = $this->overall['updated'];
+        $epoch = $this->overall['updated'] / 1000;
         $this->overall['updated'] = gmdate('r', $epoch);
         return $view->with('overall', $this->overall);
     }
